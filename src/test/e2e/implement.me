@@ -1,1 +1,21 @@
-Looking pretty empty 😓
+This test assumes that there is a docker image tagged "ecsd-tech-test:latest" on the file system.
+
+PRE REQUISITE
+Download maven and java-jre or java-jdk, or should be available at runtime on host machine.
+
+
+TO BUILD AND INSTALL DEPENDENCIES IN THE .M2 FOLDER
+
+Navigate to this folder:
+cd qa-tech-test/src/test/e2e/tech-challenge/
+
+Run:
+mvn clean install
+
+TO RUN THE TESTS
+
+Navigate to the following folder:
+cd qa-tech-test/src/test/e2e/tech-challenge/test-executor
+
+To run the tests run the following command:
+mvn verify -P selenium-tests
